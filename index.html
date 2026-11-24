@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ítalo Diniz | Dados, BI e Ciência da Computação</title>
+  <meta name="description" content="Portfólio de Ítalo George da Costa Diniz: estudante de Ciência da Computação, painéis BI e análises para o agronegócio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav">
+    <a href="#inicio" class="logo">Ítalo Diniz</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav id="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#formacao">Formação</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contato" class="cta-nav">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="kicker">Ciência da Computação · Agro · Dados</p>
+        <h1>Transformo números do Itaú BBA em decisões que dá para enxergar.</h1>
+        <p class="lead">Olá, eu sou o Ítalo, 20 anos, de Taguatinga Norte. Crio painéis e relatórios em HTML e BI que mostram o que importa: volume, resultado e os próximos passos.</p>
+        <div class="actions">
+          <a href="#trajetoria" class="btn primary">Ver minha trajetória</a>
+          <a href="#contato" class="btn ghost">Falar comigo</a>
+        </div>
+      </div>
+
+      <!-- Painel interativo: dados ilustrativos -->
+      <aside class="panel" aria-label="Exemplo ilustrativo de painel">
+        <div class="panel-head">
+          <strong>Receita por grupo de clientes · Nov</strong>
+          <span class="tag">dados ilustrativos</span>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-view="top" role="tab">Top 5</button>
+          <button class="tab" data-view="bottom" role="tab">Bottom 5</button>
+        </div>
+        <div class="chart" id="chart" role="group" aria-label="Gráfico de receita por grupo"></div>
+        <div class="detail" aria-live="polite">
+          <small id="dName"></small>
+          <strong id="dValue"></strong>
+          <span id="dMeta"></span>
+        </div>
+        <p class="panel-note">Clique nas colunas: é o tipo de visão que eu monto no dia a dia.</p>
+      </aside>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <figure class="photo tall" data-label="Sua foto (images/eu.jpeg)">
+        <img src="images/eu.jpeg" alt="Foto de Ítalo Diniz">
+      </figure>
+      <div class="about">
+        <h2>Quem sou eu</h2>
+        <p>Sou <strong>Ítalo George da Costa Diniz,</strong> estudante do 4º semestre de Ciência da Computação na UDF, com atuação na interseção entre tecnologia, dados e negócios.</p>
+        <p>Ao longo da minha trajetória, passei pelo atendimento ao público, pela estruturação de Business Intelligence no setor público e hoje atuando com Payments no Itaú BBA, aprendi na prática que dado só tem valor quando alguém consegue ler, entender e decidir com ele.</p>
+        <p>Meu foco é justamente esse: pegar bases brutas e problemas complexos para entregar soluções claras, bem estruturadas e úteis para quem precisa tomar decisões.</p>
+        <div class="stats">
+          <div><b data-count="20">0</b><span>anos</span></div>
+          <div><b data-count="3">0</b><span>experiências</span></div>
+          <div><b data-count="4" data-suffix="º">0</b><span>semestre na UDF</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section class="section col" id="trajetoria">
+      <h2>Trajetória profissional</h2>
+      <p class="sub">Clique em cada etapa para ver os detalhes.</p>
+
+      <ol class="timeline">
+        <li class="item">
+          <span class="dot"></span>
+          <div class="card">
+            <button class="item-head" aria-expanded="false">
+              <span><small>Hoje · 20 anos</small><b>Estagiário de Payments — Agro | Itaú BBA</b></span><i></i>
+            </button>
+            <div class="item-body">
+              <figure class="photo wide" data-label="Foto do Itaú BBA (images/itau.jpeg)"><img src="images/itau.jpeg" alt="Itaú BBA"></figure>
+              <p>Desenvolvimento de análises e dashboards gerenciais para acompanhamento de volumes transacionados, resultados financeiros e parametrizações operacionais na carteira de Agroindústrias e Produtores Rurais.</p>
+              <p>Atuação na interface entre negócio e tecnologia, traduzindo dados de pagamentos e <strong>Cash Management</strong> em insumos estratégicos para tomada de decisão, ganho de eficiência e mitigação de gargalos operacionais.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="item">
+          <span class="dot"></span>
+          <div class="card">
+            <button class="item-head" aria-expanded="false">
+              <span><small>19 a 20 anos</small><b>Estagiário de TI — ENAGRO | Ministério da Agricultura e Pecuária</b></span><i></i>
+            </button>
+            <div class="item-body">
+              <figure class="photo wide" data-label="Foto do MAPA / ENAGRO (images/mapa.jpeg)"><img src="images/mapa.jpeg" alt="Ministério da Agricultura e Pecuária"></figure>
+              <p>Estruturação completa de soluções de <strong>Business Intelligence,</strong> desde a modelagem relacional e extração/tratamento de dados via SQL (em parceria com a STI) até o design e implementação de painéis gerenciais interativos.</p>
+              <p>Paralelamente, atuei no front-end da plataforma da ENAGRO desenvolvendo e mantendo páginas e componentes em <strong>HTML,</strong> integrando demandas pedagógicas e operacionais a entregas técnicas escaláveis.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="item">
+          <span class="dot"></span>
+          <div class="card">
+            <button class="item-head" aria-expanded="false">
+              <span><small>17 anos</small><b>Jovem Aprendiz — Atendimento e Operações | Maine Coon</b></span><i></i>
+            </button>
+            <div class="item-body">
+              <figure class="photo wide" data-label="Foto da loja (images/mainecoon.jpeg)"><img src="images/mainecoon.jpeg" alt="Loja Maine Coon"></figure>
+              <p>Primeira experiência no mercado de trabalho, atuando de forma multidisciplinar no varejo de moda social masculina. Responsável pelo atendimento consultivo ao cliente, operação de caixa e organização operacional da loja, base fundamental para o desenvolvimento de comunicação assertiva, proatividade e senso de responsabilidade.</p>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section class="section" id="formacao">
+      <div class="about">
+        <h2>Formação</h2>
+        <p><strong>Ciência da Computação — UDF | 4º Semestre</strong></p>
+        <p>Ao longo dos quatro primeiros semestres, consolidei fundamentos essenciais em algoritmos, estruturas de dados, bancos de dados relacionais (SQL), arquitetura de computadores e desenvolvimento full-stack (Java, Python, C/C++ e JavaScript).</p>
+        <p>Meu objetivo com a graduação é unir esse rigor computacional à minha vivência prática de mercado para arquitetar sistemas de alta performance e produtos digitais completos.</p>
+      </div>
+      <figure class="photo" data-label="Foto da UDF (images/udf.jpeg)">
+        <img src="images/udf.jpeg" alt="Campus da UDF">
+      </figure>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section col" id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="filters">
+        <button class="chip active" data-f="all">Todas</button>
+        <button class="chip" data-f="dados">Dados</button>
+        <button class="chip" data-f="web">Web</button>
+        <button class="chip" data-f="soft">Comportamento</button>
+      </div>
+      <ul class="skills" id="skills">
+        <li data-c="dados">Painéis de BI</li>
+        <li data-c="dados">Análise de volumetria</li>
+        <li data-c="dados">Visualização de dados</li>
+        <li data-c="web">HTML</li>
+        <li data-c="web">CSS</li>
+        <li data-c="web">JavaScript</li>
+        <li data-c="soft">Visão de negócio</li>
+        <li data-c="soft">Autonomia</li>
+        <li data-c="soft">Comunicação clara</li>
+      </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+      <h2>Vamos conversar?</h2>
+      <p>Aberto a oportunidades, projetos e trocas de ideia sobre dados.</p>
+      <div class="actions center">
+  <a class="btn primary"
+     href="mailto:italo.dnz01@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio&body=Ol%C3%A1%20%C3%8Dtalo%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+     >Enviar e-mail</a>
+
+  <a class="btn ghost light"
+     href="https://wa.me/5561984126552?text=Ol%C3%A1%20%C3%8Dtalo%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+     target="_blank" rel="noopener">WhatsApp</a>
+
+  <a class="btn ghost light"
+     href="https://github.com/Diniz018"
+     target="_blank" rel="noopener">GitHub</a>
+</div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Ítalo George da Costa Diniz · Feito com HTML, CSS e JavaScript</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
